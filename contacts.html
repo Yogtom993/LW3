@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore — контакти</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__top">
+    <a class="logo" href="index.html"><img src="images/logo.svg" alt="TechStore"></a>
+    <div class="header__info">
+      <h1>TechStore</h1>
+      <p>Каталог продукції компанії</p>
+    </div>
+  </div>
+</header>
+<nav class="nav">
+  <a href="index.html">Головна</a>
+  <a href="catalog.html">Каталог</a>
+  <a href="contacts.html">Контакти</a>
+</nav>
+
+<main class="page">
+  <section class="promo" id="promo">
+    <h2>Промо TechStore</h2>
+    <p>Безкоштовна доставка аксесуарів при замовленні від 1500 грн. Банер можна прибрати на один день.</p>
+    <button class="btn" id="hidePromo">Прибрати</button>
+  </section>
+
+  <section class="form-layout">
+    <article class="panel">
+      <h2>Форма замовлення</h2>
+      <form class="form" id="orderForm">
+        <label>Ім'я<input type="text" required placeholder="Ваше ім'я"></label>
+        <label>Email<input type="email" required placeholder="name@example.com"></label>
+        <label>Телефон<input type="tel" required placeholder="+380501112233"></label>
+        <label>Товар<input type="text" required placeholder="Наприклад, Apple AirPods 4"></label>
+        <button class="btn" type="submit">Надіслати</button>
+      </form>
+      <p id="formResult" class="output">Дані форми з'являться після відправлення.</p>
+    </article>
+
+    <article class="panel">
+      <h2>Блокнот покупця</h2>
+      <p>Записи зберігаються у localStorage браузера.</p>
+      <textarea id="noteInput" rows="5" placeholder="Запишіть товар або коментар"></textarea>
+      <div class="buttons">
+        <button class="btn" id="saveNote">Зберегти запис</button>
+        <button class="btn btn--light" id="clearNotes">Очистити</button>
+      </div>
+      <div id="noteList" class="note-list">Немає записів.</div>
+    </article>
+  </section>
+</main>
+<footer class="footer">© 2026 TechStore. Лабораторна робота №3</footer>
+</body>
+</html>

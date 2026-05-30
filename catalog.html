@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore — каталог</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__top">
+    <a class="logo" href="index.html"><img src="images/logo.svg" alt="TechStore"></a>
+    <div class="header__info">
+      <h1>TechStore</h1>
+      <p>Каталог продукції компанії</p>
+    </div>
+  </div>
+</header>
+<nav class="nav">
+  <a href="index.html">Головна</a>
+  <a href="catalog.html">Каталог</a>
+  <a href="contacts.html">Контакти</a>
+</nav>
+
+<main class="page">
+  <section class="panel">
+    <h2>Каталог товарів</h2>
+    <table class="product-table">
+      <tr><th>Назва</th><th>Категорія</th><th>Ціна</th></tr>
+      <tr><td>Apple MacBook Air 13 M2 8/256 GB</td><td>Ноутбук</td><td>39 999 грн</td></tr>
+      <tr><td>Lenovo IdeaPad Slim 3 15AMN8 16/512 GB</td><td>Ноутбук</td><td>24 999 грн</td></tr>
+      <tr><td>ASUS Vivobook 15 X1504VA i5/16/512 GB</td><td>Ноутбук</td><td>29 999 грн</td></tr>
+      <tr><td>Samsung Galaxy A55 5G 8/256 GB</td><td>Смартфон</td><td>18 999 грн</td></tr>
+      <tr><td>Xiaomi Redmi Note 13 Pro 8/256 GB</td><td>Смартфон</td><td>12 999 грн</td></tr>
+      <tr><td>Apple AirPods 4</td><td>Навушники</td><td>7 499 грн</td></tr>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Інтерактивні налаштування каталогу</h2>
+    <div class="task-grid">
+      <article class="task-card task-card--row">
+        <div>
+          <h3>Вибір кольору квадрата</h3>
+          <p>У списку є п'ять кольорів. Після вибору колір квадрата змінюється.</p>
+          <select id="colorSelect" class="select">
+            <option value="#0f172a">Чорний</option>
+            <option value="#2563eb">Синій</option>
+            <option value="#16a34a">Зелений</option>
+            <option value="#d97706">Помаранчевий</option>
+            <option value="#dc2626">Червоний</option>
+          </select>
+        </div>
+        <div id="colorSquare" class="square"></div>
+      </article>
+      <article class="task-card">
+        <h3>Координати миші та код клавіші</h3>
+        <p id="mouseCoords">X: 0; Y: 0</p>
+        <p id="keyCode">Код клавіші: —</p>
+      </article>
+      <article class="task-card">
+        <h3>Зміна розміру тексту</h3>
+        <button class="btn" id="fontPlus">A+</button>
+        <button class="btn" id="fontMinus">A-</button>
+        <p id="readText">Опис товару змінює розмір. Вибір користувача зберігається у cookie.</p>
+      </article>
+      <article class="task-card">
+        <h3>Кольорова фраза</h3>
+        <p>Літери фрази фарбуються за заданим діапазоном кольорів.</p>
+        <button class="btn" id="rainbowBtn">Пофарбувати текст</button>
+        <p id="rainbowText" class="rainbow-text">TechStore каталог сучасної техніки</p>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="footer">© 2026 TechStore. Лабораторна робота №3</footer>
+</body>
+</html>

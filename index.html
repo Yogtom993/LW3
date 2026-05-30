@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore — ЛР3 JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__top">
+    <a class="logo" href="index.html"><img src="images/logo.svg" alt="TechStore"></a>
+    <div class="header__info">
+      <h1>TechStore</h1>
+      <p>Каталог продукції компанії</p>
+    </div>
+  </div>
+</header>
+<nav class="nav">
+  <a href="index.html">Головна</a>
+  <a href="catalog.html">Каталог</a>
+  <a href="contacts.html">Контакти</a>
+</nav>
+
+<main class="page">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Лабораторна робота №3</p>
+      <h2>Динамічний HTML, форми та основи JavaScript</h2>
+      <p>На сайті TechStore завдання JavaScript вбудовані у звичайні елементи каталогу: годинник, рекламний блок, зміну тексту та інтерактивні панелі.</p>
+      <div class="clock-card">
+        <span>Поточний час:</span>
+        <strong id="clock">--:--:--</strong>
+      </div>
+    </div>
+    <div class="hero__card">
+      <h3>Товар дня</h3>
+      <p><b>Apple MacBook Air 13 M2 8/256 GB</b></p>
+      <p>Навчальна ціна: <strong>39 999 грн</strong></p>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Інтерактивні елементи головної сторінки</h2>
+    <div class="task-grid">
+      <article class="task-card">
+        <h3>Текст різного розміру</h3>
+        <p>Функція виводить текстовий рядок із заданим розміром шрифту.</p>
+        <button class="btn" id="fontDemo">Показати текст</button>
+        <div id="fontOutput" class="output"></div>
+      </article>
+      <article class="task-card">
+        <h3>Рухоме зображення</h3>
+        <p>Невелика картинка змінює положення кожну секунду.</p>
+        <div class="moving-area">
+          <img id="movingImg" class="moving" src="images/sticker.svg" alt="Рухоме зображення TechStore">
+        </div>
+      </article>
+      <article class="task-card">
+        <h3>Зміна абзаців</h3>
+        <p class="article-text">Перший абзац для перевірки зміни розміру.</p>
+        <p class="article-text">Другий абзац для перевірки setAttribute.</p>
+        <button class="btn" id="paragraphBtn">Змінити абзаци на 15px</button>
+      </article>
+      <article class="task-card">
+        <h3>Поступове витирання</h3>
+        <p id="wipeText" class="wipe">Інформаційний блок поступово витирається за допомогою таймера.</p>
+        <button class="btn" id="wipeBtn">Запустити витирання</button>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="footer">© 2026 TechStore. Лабораторна робота №3</footer>
+</body>
+</html>
