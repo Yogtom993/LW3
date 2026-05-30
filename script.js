@@ -116,3 +116,22 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('formResult').textContent = 'Форму перевірено. Дані замовлення готові до відправлення.';
   });
 });
+
+
+// Блок 1, завдання 2: рухоме зображення через setInterval
+function moveImage() {
+  const img = document.getElementById("movingImg");
+  const area = document.querySelector(".moving-area");
+  if (!img || !area) return;
+
+  const maxX = Math.max(20, area.clientWidth - img.clientWidth - 10);
+  const maxY = Math.max(20, area.clientHeight - img.clientHeight - 10);
+
+  const x = Math.max(10, Math.floor(Math.random() * maxX));
+  const y = Math.max(10, Math.floor(Math.random() * maxY));
+
+  img.style.left = x + "px";
+  img.style.top = y + "px";
+}
+
+setInterval(moveImage, 1000);
