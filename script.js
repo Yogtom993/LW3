@@ -124,8 +124,8 @@ function moveImage() {
   const area = document.querySelector(".moving-area");
   if (!img || !area) return;
 
-  const maxX = Math.max(20, area.clientWidth - img.clientWidth - 10);
-  const maxY = Math.max(20, area.clientHeight - img.clientHeight - 10);
+  const maxX = Math.max(20, area.clientWidth - img.offsetWidth - 10);
+  const maxY = Math.max(20, area.clientHeight - img.offsetHeight - 10);
 
   const x = Math.max(10, Math.floor(Math.random() * maxX));
   const y = Math.max(10, Math.floor(Math.random() * maxY));
