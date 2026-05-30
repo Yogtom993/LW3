@@ -1,7 +1,0 @@
-<svg width="220" height="180" viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">
-<rect width="220" height="180" rx="22" fill="#e8f0ff"/>
-<rect x="50" y="45" width="120" height="72" rx="10" fill="#2563eb"/>
-<rect x="64" y="58" width="92" height="46" rx="4" fill="#f8fafc"/>
-<rect x="75" y="124" width="70" height="10" rx="5" fill="#0f172a"/>
-<text x="110" y="160" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#0f172a">TechStore</text>
-</svg>
